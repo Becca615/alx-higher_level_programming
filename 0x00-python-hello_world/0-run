@@ -1,3 +1,2 @@
 #!/bin/bash
-pyton $PYFILE
-
+pyton3 $PYFILE
