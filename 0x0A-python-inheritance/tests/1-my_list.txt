@@ -1,0 +1,72 @@
+>>> MyList = __import__('1-my_list').MyList
+
+
+============================
+= How to use this function =
+============================
+
+>>> newlist = MyList()
+>>> newlist.append(3)
+>>> newlist.append(1)
+>>> newlist.append(4)
+>>> print(newlist)
+[3, 1, 4]
+>>> newlist.print_sorted()
+[1, 3, 4]
+>>> print(newlist)
+[3, 1, 4]
+
+
+==========================================
+= Passing an empty list to this function =
+==========================================
+
+>>> nolist = MyList()
+>>> print(nolist)
+[]
+>>> nolist.print_sorted()
+[]
+>>> print(nolist)
+[]
+
+
+======================================================
+= Passing positive and negative infinity to function =
+======================================================
+
+>>> biglist = MyList()
+>>> biglist.append(0)
+>>> biglist.append(float('inf'))
+>>> biglist.append(float('-inf'))
+>>> print(biglist)
+[0, inf, -inf]
+>>> biglist.print_sorted()
+[-inf, 0, inf]
+>>> print(biglist)
+[0, inf, -inf]
+
+
+============================================
+= Passing in negative integers to function =
+============================================
+
+>>> neglist = MyList()
+>>> neglist.append(-500)
+>>> neglist.append(-1)
+>>> neglist.append(-2)
+>>> print(neglist)
+[-500, -1, -2]
+>>> neglist.print_sorted()
+[-500, -2, -1]
+>>> print(neglist)
+[-500, -1, -2]
+
+
+======================================
+= Passing a list of only one integer =
+======================================
+
+>>> shortlist = MyList()
+>>> shortlist.append(-2)
+>>> print(shortlist)
+[-2]
