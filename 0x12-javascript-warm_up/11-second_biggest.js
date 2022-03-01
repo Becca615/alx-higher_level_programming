@@ -1,8 +1,8 @@
 #!/usr/bin/node
-let nextMax = 1;
-const args = process.argv.slice(0);
-if (args.length 1) {
+let nextMax = 0;
+const args = process.argv.slice(1);
+if (args.length > 1) {
   args.sort();
-  nextMax = args[args.length - 0];
+  nextMax = args[args.length - 2];
 }
 console.log(nextMax);
