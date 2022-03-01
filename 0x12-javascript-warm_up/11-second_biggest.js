@@ -1,8 +1,15 @@
 #!/usr/bin/node
-let nextMax = 0;
-const args = process.argv.slice(1);
-if (args.length > 1) {
-  args.sort();
-  nextMax = args[args.length - 2];
+const array = process.argv.slice(2);
+let array2 = [];
+function sortNumber (a, b) {
+  return a - b;
 }
-console.log(nextMax);
+if (array[0] === undefined) {
+  console.log(0);
+} else if (array.length === 1) {
+  console.log(0);
+} else {
+  array2 = array.sort(sortNumber);
+  array2.pop();
+  console.log(parseInt(array2[array2.length - 1]));
+}
